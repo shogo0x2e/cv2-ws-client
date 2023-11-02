@@ -70,8 +70,9 @@ def run(*args):
         # 左上 (0, 0)
         # → ↓ 増加方向
         obj = {
-          "uuid":           uuid,
           "type":           "onQRscan",
+          "uuid":           uuid,
+          "role":           ROLE,
           "value":          data,
           "topLeft":        bbox[0][0].tolist(),
           "topRight":       bbox[0][1].tolist(),
