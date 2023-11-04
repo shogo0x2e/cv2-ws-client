@@ -6,7 +6,8 @@ import cv2
 import json
 
 ########## CONFIG ##########
-SERVER_URI  = "ws://localhost:5001"
+# SERVER_URI  = "ws://192.168.0.184:5001"
+SERVER_URI  = "wss://shibafes2023g-f57388251b9d.herokuapp.com//"
 CAMERA_ID   = 0
 ROLE        = "qrReader"
 
