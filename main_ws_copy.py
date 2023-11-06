@@ -53,6 +53,8 @@ def run(*args):
   # 同じものは繰り返し送らない
   read_before = ""
   
+  
+  
   while True:
     # カメラから1フレーム読み取り
     ret, frame = cap.read()
@@ -64,7 +66,7 @@ def run(*args):
     if data:
       
       # ウィンドウ表示
-      # cv2.imshow('frame', frame)
+      cv2.imshow('frame', frame)
       print(str(time.time()) + " | Decoded Data:", data)
       
       if data != read_before and bbox is not None:
